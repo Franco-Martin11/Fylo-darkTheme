@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /**Font*/
+
+  /*Body copy*/
+  --font-body: "Open Sans", sans-serif;
+
+  /*Heading,CTA,Navigation*/
+  --font-heading: "Raleway", sans-serif;
+
+  /**Neutral*/
+  --font-color-neutral: #cccccc;
+
+  /**Color*/
+  --main-dk-blue: hsl(218, 28%, 13%);
+  --footer-dk-blue: hsl(216, 53%, 9%);
+  --testimonials-dk-blue: #202a3c;
+  --input-dk-blue: hsl(217, 28%, 15%);
+
+  /**Colors gradient */
+  --gradient-cyan: #65e2d9;
+  --gradient-blue: #339ecc;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 185px 25px 25px 25px;
+  background-color: var(--footer-dk-blue);
+}
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0;
+}
+.footer__location--card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.footer__location--card > p {
+  font-size: 1.15rem;
+  font-family: var(--font-body);
+  color: var(--font-color-neutral);
+}
+
+.addres__icon {
+  width: 22px;
+  height: 22px;
+}
+.footer__redirect {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__hyperlink {
+  font-size: 1.15rem;
+  color: var(--font-color-neutral);
+}
+.footer__hyperlink:nth-child(4) {
+  margin-bottom: 15px;
+}
+.footer__hyperlink:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer__media--container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.footer__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 7.5px;
+  border-radius: 50%;
+  background: rgba(98, 224, 217, 0.18);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(98, 224, 217, 0.63);
+}
+.footer__media:hover {
+  background: rgba(98, 224, 217, 0.5);
+  border: 1px solid rgb(98, 224, 218);
+}
+.media__icon {
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer__logo {
+    align-self: flex-start;
+  }
+  .footer__location {
+    width: 35%;
+  }
+}

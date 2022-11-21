@@ -1,0 +1,24 @@
+.cta {
+  font-weight: 700;
+  padding: 14px 42px; /*
+  background: rgb(24, 24, 125);*/
+  background: rgb(51, 158, 204);
+  color: #fff;
+  border-radius: 50px;
+}
+
+.cta:hover {
+  color: #fff;
+  text-decoration: underline;
+  background: rgb(51, 158, 204);
+  background: radial-gradient(
+    circle,
+    rgba(51, 158, 204, 1) 57%,
+    rgba(101, 226, 217, 1) 100%
+  );
+  transition: 1500ms;
+}
+
+button {
+  border: none;
+}

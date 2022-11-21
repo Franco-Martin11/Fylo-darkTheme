@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /**Font*/
+
+  /*Body copy*/
+  --font-body: "Open Sans", sans-serif;
+
+  /*Heading,CTA,Navigation*/
+  --font-heading: "Raleway", sans-serif;
+
+  /**Neutral*/
+  --font-color-neutral: #cccccc;
+
+  /**Color*/
+  --main-dk-blue: hsl(218, 28%, 13%);
+  --footer-dk-blue: hsl(216, 53%, 9%);
+  --testimonials-dk-blue: #202a3c;
+  --input-dk-blue: hsl(217, 28%, 15%);
+
+  /**Colors gradient */
+  --gradient-cyan: #65e2d9;
+  --gradient-blue: #339ecc;
+}
+.news__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background-color: var(--testimonials-dk-blue);
+  border-radius: 15px;
+  padding: 40px 20px;
+  position: relative;
+  top: 160px;
+  z-index: 3;
+}
+.news__title {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.news__paragraph {
+  color: var(--font-color-neutral);
+  font-size: 1rem;
+  text-align: center;
+}
+.news__input {
+  width: 100%;
+  padding: 14px 42px;
+  border: none;
+  border-radius: 50px;
+}
+.news__cta {
+  width: 100%;
+}

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /**Font*/
+
+  /*Body copy*/
+  --font-body: "Open Sans", sans-serif;
+
+  /*Heading,CTA,Navigation*/
+  --font-heading: "Raleway", sans-serif;
+
+  /**Color*/
+  --main-dk-blue: hsl(218, 28%, 13%);
+  --footer-dk-blue: hsl(216, 53%, 9%);
+  --testimonials-dk-blue: hsl(219, 30%, 18%);
+  --input-dk-blue: hsl(217, 28%, 15%);
+
+  /**Colors gradient */
+  --gradient-cyan: #65e2d9;
+  --gradient-blue: #339ecc;
+
+  /**Neutral*/
+  --font-color-neutral: #cccccc;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20em;
+}
+.card__container:nth-child(2),
+.card__container:nth-child(4) {
+  margin: 15px 0;
+}
+.card__copy {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__title {
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.card__paragraph {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--font-color-neutral);
+}

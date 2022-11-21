@@ -1,0 +1,71 @@
+:root {
+  /**Font*/
+
+  /*Body copy*/
+  --font-body: "Open Sans", sans-serif;
+
+  /*Heading,CTA,Navigation*/
+  --font-heading: "Raleway", sans-serif;
+
+  /**Neutral*/
+  --font-color-neutral: #cccccc;
+
+  /**Color*/
+  --main-dk-blue: hsl(218, 28%, 13%);
+  --footer-dk-blue: hsl(216, 53%, 9%);
+  --testimonials-dk-blue: hsl(219, 30%, 18%);
+  --input-dk-blue: hsl(217, 28%, 15%);
+
+  /**Colors gradient */
+  --gradient-cyan: #65e2d9;
+  --gradient-blue: #339ecc;
+}
+
+.productive__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.productive__title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.productive__paragraph {
+  font-weight: 400s;
+  font-size: 1rem;
+  color: var(--font-color-neutral);
+  margin-top: 10px;
+}
+
+.productive__anchor {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+  background-color: none;
+  width: fit-content;
+  padding-bottom: 5px;
+  color: #62e0d9;
+  border-bottom: 1px solid #62e0d9;
+}
+.productive__anchor::after {
+  content: url(/images/Icons/icon-arrow.svg);
+}
+
+@media screen and (min-width: 768px) {
+  .productive__container {
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .productive__copy {
+    display: flex;
+    flex:1 1 300px;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
